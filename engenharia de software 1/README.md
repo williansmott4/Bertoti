@@ -31,3 +31,139 @@ Dentro do Google, dizemos por vezes: "A engenharia de software é programação 
 
 - Como o sistema deve agir, quais os caminhos deve seguir para cumprir os requisitos funcionais, por exemplo em quais os dados serão inclusos e em qual formato o relatório será gerado. Qualidades do sistema.
 <img src="https://user-images.githubusercontent.com/108089562/227500602-c1fdd604-51c4-497f-8c25-7e775757c7d2.png">
+
+```java
+  
+  //classe 1
+  public class App {
+    public static void main(String[] args) throws Exception {
+        Estoque estoque = new Estoque();
+        
+        // Criando alguns jogos de exemplo
+        Game game1 = new Game();
+        game1.setName("The Legend of Zelda: Breath of the Wild");
+        game1.setConsole("Nintendo Switch");
+        game1.setValor(59.99);
+        
+        Game game2 = new Game();
+        game2.setName("Super Mario Odyssey");
+        game2.setConsole("Nintendo Switch");
+        game2.setValor(49.99);
+        
+        Game game3 = new Game();
+        game3.setName("God of War");
+        game3.setConsole("PlayStation 4");
+        game3.setValor(39.99);
+        
+        // Cadastrando os jogos no estoque
+        estoque.cadastrarGame(game1);
+        estoque.cadastrarGame(game2);
+        estoque.cadastrarGame(game3);
+        
+        // Testando a funcionalidade de buscar por nome
+        List<Game> jogosPorNome = estoque.buscarPorNome("Super Mario Odyssey");
+        System.out.println("Jogos encontrados por nome:");
+        for (Game jogo : jogosPorNome) {
+            System.out.println(jogo.getName() + " - " + jogo.getConsole() + " - R$" + jogo.getValor());
+        }
+        System.out.println();
+        
+        // Testando a funcionalidade de buscar por console
+        List<Game> jogosPorConsole = estoque.buscarPorConsole("Nintendo Switch");
+        System.out.println("Jogos encontrados por console:");
+        for (Game jogo : jogosPorConsole) {
+            System.out.println(jogo.getName() + " - " + jogo.getConsole() + " - R$" + jogo.getValor());
+        }
+        System.out.println();
+        
+        // Testando a funcionalidade de buscar por valor
+        List<Game> jogosPorValor = estoque.buscarPorValor(39.99);
+        System.out.println("Jogos encontrados por valor:");
+        for (Game jogo : jogosPorValor) {
+            System.out.println(jogo.getName() + " - " + jogo.getConsole() + " - R$" + jogo.getValor());
+        }
+        System.out.println();
+    }
+}
+
+   
+   //classe 2
+import java.util.LinkedList;
+import java.util.List;
+
+public class Estoque {
+    private List<Game> games = new ArrayList<>();
+    
+    public void cadastrarGame(Game game) {
+        games.add(game);
+    }
+    
+    public List<Game> buscarPorNome(String nome) {
+        List<Game> resultados = new ArrayList<>();
+        
+        for (Game game : games) {
+            if (game.getName().equalsIgnoreCase(nome)) {
+                resultados.add(game);
+            }
+        }
+        
+        return resultados;
+    }
+    
+    public List<Game> buscarPorConsole(String console) {
+        List<Game> resultados = new ArrayList<>();
+        
+        for (Game game : games) {
+            if (game.getConsole().equalsIgnoreCase(console)) {
+                resultados.add(game);
+            }
+        }
+        
+        return resultados;
+    }
+    
+    public List<Game> buscarPorValor(double valor) {
+        List<Game> resultados = new ArrayList<>();
+        
+        for (Game game : games) {
+            if (game.getValor() == valor) {
+                resultados.add(game);
+            }
+        }
+        
+        return resultados;
+    }
+}
+
+
+
+  //classe 3
+public class Game {
+    private String Name;
+    private String Console;
+    private double Valor;
+    public String getName() {
+        return Name;
+    }
+    public void setName(String name) {
+        Name = name;
+    }
+    public String getConsole() {
+        return Console;
+    }
+    public void setConsole(String console) {
+        Console = console;
+    }
+    public double getValor() {
+        return Valor;
+    }
+    public void setValor(double valor) {
+        Valor = valor;
+    }
+}
+
+
+  
+
+```
+
