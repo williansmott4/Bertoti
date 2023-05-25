@@ -11,7 +11,7 @@ Nós vemos três diferenças críticas entre programação e engenharia de softw
 
 -  As principais noções a longo prazo no ramo de engenharia de software, são diretamente voltadas a compensação. Todo investimento de tempo em prol da mudança nescessária aos engenheiros de software, é o que diferencia tal profissão dos programadores comuns. O segundo diferencial entre essas duas vertentes, visando precisão (já que as decisões que geralmente são de alto risco), seria a demanda  tempo de qualidade. 
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
 
 Within Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software engineering: after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, maintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t programming.
 
