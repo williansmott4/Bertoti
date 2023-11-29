@@ -16,3 +16,15 @@ Minimize a carga de memória do usuário tornando visíveis elementos, ações e
 <p align=center>  <img src = "images/3-1.png"> </p>
 <p align=center>  <img src = "images/3-2.png"> </p>
 - Os sites de e-commerce, por exemplo, costumam seguir padrões em seu layout, tendo a barra de busca no topo, o carrinho no canto superior direito, na página do produto fica uma foto deste a esquerda e sua descrição na direita, permitindo assim que o usuário reconheça o layout de experiências anteriores que ele teve nos demais sites do gênero, focando mais sua atenção nos produtos, do que em aprender a utilizar o site.
+
+4.Design estético e minimalista:
+As interfaces não devem conter informações irrelevantes ou raramente necessárias. Cada unidade extra de informação numa interface compete com as unidades de informação relevantes e diminui a sua visibilidade relativa.
+<p align=center>  <img src = "images/apple.png"> </p>
+-O site da Apple é um bom exemplo de estética e design minimalista, ele é bem simples e objetivo, mostrando o nome do produto, uma linha o descrevendo e a foto dele grande e destacada com cores contrastantes, além disso o site valoriza o espaço em branco, os elementos são bem organizados e a tipografia usada é simples e limpa.
+<p align=center>  <img src = "images/feio.png"> </p>
+- Site com muita informação e pouco objetivo.
+
+5.Ajude os usuários a reconhecer, diagnosticar e se recuperar de erros:
+As mensagens de erro devem ser expressas em linguagem simples (sem códigos de erro), indicar com precisão o problema e sugerir uma solução de forma construtiva.
+<p align=center>  <img src = "images/amazon.png"> </p>
+- Por exemplo, o formulário de criação de conta da Amazon mostra quando um dado está preenchido incorretamente, no momento de preencher os dados a plataforma orienta onde está o erro, próximo do campo em que ele ocorreu e os passos para corrigi-lo.
